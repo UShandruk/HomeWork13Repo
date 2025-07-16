@@ -9,5 +9,6 @@ public class Main {
         System.out.println("Год издания до изменения: " + book1.getPublicationYear());
         book1.setPublicationYear(2000);
         System.out.println("Год издания после изменения: " + book1.getPublicationYear());
+
     }
 }
