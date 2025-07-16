@@ -1,15 +1,13 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Author author1 = new Author("Федор", "Достоевский");
+        Book book1 = new Book("Идиот",author1, 1965);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        Author author2 = new Author("Иван", "Ефремов");
+        Book book2 = new Book("Час быка", author2, 2001);
+
+        System.out.println("Год издания до изменения: " + book1.getPublicationYear());
+        book1.setPublicationYear(2000);
+        System.out.println("Год издания после изменения: " + book1.getPublicationYear());
     }
 }
