@@ -76,6 +76,7 @@ public class Employee {
         return id + " - " + fIO + " - " + salary;
     }
 
+    /// Проверить, равны ли объекты
     @Override
     public boolean equals(Object o) {
         if (this == o)
@@ -89,6 +90,7 @@ public class Employee {
         }
     }
 
+    /// Получить хеш-код
     @Override
     public int hashCode() {
         /*int result = this != null ? this.hashCode() : 0;
